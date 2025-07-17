@@ -11,9 +11,10 @@ body {
     display: flex;
     flex-direction: column;
     font-family: 'Courier New';
-    width: 99%;
+    width: 90%;
     justify-content: center;
     align-items: center;
+    padding: 10px;
 }
 
 body div {
@@ -39,6 +40,7 @@ p, li {
 
 a {
     color: var(--color3);
+    word-wrap: break-word;
 }
 
 #head {
@@ -83,4 +85,25 @@ img {
     background-color: var(--color3);
     color: var(--color4);
     border: solid var(--color4);
+}
+
+@media (max-width: 1000px) {
+  body div {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  #head div {
+    text-align: center;
+  }
+  .project-card {
+    width: 90%;
+    font-size: 25px;
+  }
+
+  img {
+    width: 90%;
+  }
 }

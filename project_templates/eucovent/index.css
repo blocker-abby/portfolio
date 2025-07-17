@@ -5,3 +5,9 @@
 #media ul {
     width: 40%;
 }
+
+@media (max-width: 1000px) {
+    iframe {
+        width: 90vw;
+    }
+}
