@@ -1,0 +1,7 @@
+#about, #media {
+    display: flex;
+}
+
+#media ul {
+    width: 40%;
+}

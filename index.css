@@ -1,0 +1,86 @@
+:root {
+    --color1: black;
+    --color2: #F05365;
+    --color3: #BD93BD;
+    --color4: #F2EDEB;
+    --color5: #fce63a;
+}
+
+body {
+    background-color: var(--color1);
+    display: flex;
+    flex-direction: column;
+    font-family: 'Courier New';
+    width: 99%;
+    justify-content: center;
+    align-items: center;
+}
+
+body div {
+    max-width: 1000px;
+}
+
+h1 {
+    color: var(--color4);
+}
+
+h2 {
+    color: var(--color5);
+}
+
+h3 {
+    color: var(--color3)
+}
+
+p, li {
+    color: var(--color2);
+    text-align: left;
+}
+
+a {
+    color: var(--color3);
+}
+
+#head {
+    display: flex;
+    padding: 20px;
+}
+
+img {
+    padding: 10px;
+}
+
+.section {
+    width: 100%;
+    text-align: center;
+}
+
+#projects div {
+    width: 100%;
+    display: flex;
+    align-items: space-between;
+    justify-content: center;
+}
+
+.project-card {
+    width: calc(80%/3);
+    background-color: var(--color4);
+    margin: 15px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    border: solid var(--color1); 
+    font-size: larger;
+    font-weight: bold;
+    color: var(--color3);
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-card:hover {
+    cursor: pointer;
+    background-color: var(--color3);
+    color: var(--color4);
+    border: solid var(--color4);
+}

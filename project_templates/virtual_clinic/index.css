@@ -1,0 +1,22 @@
+#row {
+    display: flex;
+    justify-content: space-between;
+}
+
+#row div {
+    margin: 20px;
+}
+
+#about {
+    width: 60%;
+}
+
+img {
+    max-width: 700px;
+    max-height: 40%;
+}
+
+.project-card {
+    width: 75%;
+    height: 100px;
+}
