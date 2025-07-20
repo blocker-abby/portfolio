@@ -1,0 +1,78 @@
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    height: fit-content;
+}
+
+h3, p {
+    text-align: center;
+    margin: 10px;
+}
+
+label, input {
+    margin: 2.5px 5px;
+}
+
+#consultchoices {
+    display: flex;
+    flex-direction: column;
+    margin-left: 25px;
+}
+
+#submit {
+    color: white;
+    background-color: var(--color_dark);
+    border: solid var(--color_dark);
+    font-size: 1.4rem;
+    margin: 25px 140px;
+    padding: 10px;
+}
+
+#submit:hover:enabled {
+    background-color: var(--color_bright);
+    color: var(--color_dark);
+    cursor: pointer;
+}
+
+#submit:disabled {
+    background-color: gray;
+    border: solid gray;
+    opacity: 50%;
+    cursor: not-allowed;
+}
+
+#consultdates {
+    margin-left: 25px;
+    display: flex;
+    align-items: start;
+}
+
+.body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+label, input {
+    padding: 0px;
+    margin: 0px;
+}
+
+#consultchoices {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    align-items: start;
+}
+
+#consultdates label {
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+#printexp {
+    margin: 20px;
+}

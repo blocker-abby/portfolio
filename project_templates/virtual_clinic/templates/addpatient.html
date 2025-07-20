@@ -1,0 +1,271 @@
+<head>
+    <link rel="stylesheet" href="../styles/general.css">
+    <link rel="stylesheet" href="../styles/login.css">
+    <link rel="stylesheet" href="../styles/header.css">
+    <link rel="stylesheet" href="../styles/index.css">
+    <link rel="stylesheet" href="../styles/addpatient.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <div class="header">
+        <a class="header_links" href="index.html" id="home"><i  class="material-icons">home</i></a>
+        <div class="nav_bar">
+            <div class="dropdown">
+                <a class="header_links" href="#">Virtual Clinic<i class="material-icons">expand_more</i></a>
+                <div class="drop">
+                    <a class="drop_link" href="addpatient.html">Add Patient</a>
+                    <a class="drop_link" href="recordlist.html">Patient Records</a>
+                    <a class="drop_link" href="recordlist.html">Start Consultation</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <a class="header_links" href="resources.html">Resources<i class="material-icons">expand_more</i><br></a>
+                <div class="drop">
+                    <a class="drop_link" href="resources.html">Video Guides</a>
+                    <a class="drop_link" href="quickstart.html">FAQ</a>
+                    <a class="drop_link" href="ticket.html">Contact Us</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <a class="header_links" href="profile.html">Account<i class="material-icons">expand_more</i><br></a>
+                <div class="drop">
+                    <a class="drop_link" href="mailbox.html"><i class="material-icons">mail</i>Mailbox</a>
+                    <a class="drop_link" href="profile.html"><i class="material-icons">account_circle</i>Account Details</a>
+                    <a class="drop_link" href="login.html"><i class="material-icons">logout</i>Logout</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="body">
+        <h2>Add New Patient</h2>
+        <form>
+            <div id="headings">
+                <a href="#" onclick="expandPI()">
+                    <div class="heading">
+                        <h3>Personal Information (required fields)</h3>
+                        <i id="exmoPI" class="material-icons">expand_more</i>
+                        <i id="exlePI" class="material-icons">expand_less</i>
+                    </div>
+                </a>
+                <div id="PI">
+                    <div class="form">
+                        <div class="col">
+                            <label for="name">
+                                Name: *required
+                                <input type="text" name="name" id="name" placeholder="Ex: JOHN" class="uppercase">
+                            </label>
+                
+                            <label for="surname">
+                                Surname: *required
+                                <input type="text" name="surname" id="surname" required placeholder="Ex: DOE" oninput="upperCase()" class="uppercase">
+                            </label>
+                            
+                            <label for="idSA">
+                                SA ID or Passport No.: *required
+                                <input type="text" name="idSA" id="idSA" placeholder="Ex: 0101200012345">
+                            </label>
+                        </div>
+                        <div class="col">
+                            <label for="dob">
+                                Date of Birth: *required
+                                <input type="date" name="dob" id="dob" placeholder="Ex: 1965-12-31" required>
+                            </label>
+                            <label for="gender">
+                                Sex: *required
+                                <select name="gender" id="gender">
+                                    <option value="choose" selected disabled hidden>Select sex</option>
+                                    <option value="male">Male</option>
+                                    <option value="female">Female</option>
+                                    <option value="-">Prefer not to say</option>
+                                </select>
+                            </label>
+                            <label for="genderid">
+                                Gender Identity:
+                                <select name="genderid" id="genderid">
+                                    <option value="choose" selected disabled hidden>Select gender identity</option>
+                                    <option value="male">Male</option>
+                                    <option value="female">Female</option>
+                                    <option value="trans ftm">Transgender Man/Female-to-Male</option>
+                                    <option value="trans mtf">Transgender Woman/Male-to-Female</option>
+                                    <option value="genderqueer">Genderqueer</option>
+                                    <option value="na">Other/Prefer not to share</option>
+                                </select>
+                            </label>
+                        </div>
+                    </div>
+                    <div id="profilephotodiv">
+                        <div id="uploaddiv">
+                            <p>Upload a Photo</p>
+                            <input type="file" name="newprofilepic" id="newprofilepic" accept="image/*" capture="'user">
+                        </div>
+                    </div>
+                    <input type="button" name="savePI" id="savePI" value="Save" class="submit">
+                </div>
+                <a href="#" onclick="expandCI()">
+                    <div class="heading">
+                        <h3>Contact Information</h3>
+                        <i id="exmoCI" class="material-icons">expand_more</i>
+                        <i id="exleCI" class="material-icons">expand_less</i>
+                    </div>
+                </a>
+                <div id="CI">
+                    <div class="form">
+                        <div class="col">                     
+                            <label for="address">
+                                Address:
+                                <input type="text" name="address" id="address" placeholder="Ex: 12 MAIN ROAD" oninput="upperCase()" class="uppercase">
+                            </label>                          
+                            <label for="city">
+                                City:
+                                <input type="text" name="city" id="city" placeholder="Ex: CARNARVON" oninput="upperCase()" class="uppercase">
+                            </label>                            
+                            <label for="zip">
+                                Zip:
+                                <input type="text" name="zip" id="zip" placeholder="Ex: 8925">
+                            </label>                           
+                            <label for="province">
+                                Province:
+                                <select name="province" id="province">
+                                    <option selected value="choose">Select province</option>
+                                    <option value="EC">Eastern Cape</option>
+                                    <option value="FS">Free State</option>
+                                    <option value="GT">Gauteng</option>
+                                    <option value="NL">Kwa-Zulu Natal</option>
+                                    <option value="NP">Limpopo</option>
+                                    <option value="MP">Mpumalanga</option>
+                                    <option value="NC">Northern Cape</option>
+                                    <option value="NW">Northwestern Cape</option>
+                                    <option value="WC">Western Cape</option>
+                                </select>
+                            </label>
+                            <label for="marital_status">
+                                Marital Status
+                                <select name="marital_status" id="marital_status">
+                                    <option selected value="choose">Select status</option>
+                                    <option value="single">Single</option>
+                                    <option value="married">Married</option>
+                                    <option value="widowed">Widowed</option>
+                                    <option value="divorced">Divorced</option>
+                                    <option value="separated">Separated</option>
+                                </select>
+                            </label>
+                        </div>
+                        <div class="col">
+                            <label for="email">
+                                Email:
+                                <input type="text" name="email" id="email" placeholder="Ex: JOHNDOE@GMAIL.COM" oninput="upperCase()" class="uppercase">
+                            </label>
+                            <label for="phone">
+                                Phone Number:
+                                <input type="text" name="phone" id="phone" placeholder="Ex: 060 999 4545">
+                            </label>
+                            <label for="employ_status">
+                                Employment Status:
+                                <select name="employ_status" id="employ_status">
+                                    <option selected value="choose">Select status</option>
+                                    <option value="employed">Employed</option>
+                                    <option value="unemployed">Unemployed</option>
+                                    <option value="student">Student</option>
+                                    <option value="retired">Retired</option>
+                                </select>
+                            </label>
+                            <label for="employer">
+                                Employer:
+                                <input type="text" name="employer" id="employer" placeholder="SKA SITE" oninput="upperCase()" class="uppercase">
+                            </label>
+                        </div>
+                    </div>
+                    <h3>Emergency Contacts</h3>
+                        <table>
+                            <thead>
+                                <th>Name</th>
+                                <th>Surname</th>
+                                <th>Relationship</th>
+                                <th>Phone</th>
+                            </thead>
+                        </table>
+                        <a href="#" class="addfield" onclick="expandAC()">Add Emergency Contact <i class="material-icons">add</i></a>
+                        <div id="AC">
+                            <label for="ecname">
+                                Name:
+                                <input type="text" name="ecname" id="ecname" value="" placeholder="Ex: JANE" oninput="upperCase()" class="uppercase">
+                            </label>
+                            <label for="ecspecialty">
+                                Surname:
+                                <input type="text" name="ecsurname" id="ecsurname" value="" placeholder="Ex: DOE" oninput="upperCase()" class="uppercase">
+                            </label>
+                            <label for="ecrelationship">
+                                Relationship:
+                                <input type="text" name="ecrelationship" id="ecrelationship" value="" placeholder="Ex: WIFE" oninput="upperCase()" class="uppercase">
+                            </label>
+                            <label for="ecphone">
+                                Phone:
+                                <input type="text" name="ecphone" id="ecphone" value="" placeholder="Ex: 060 999 4545">
+                            </label>
+                            <input type="submit" name="saveAC" id="saveAC" value="Save Contact" class="submit">
+                        </div>
+                    <input type="button" name="saveCI" id="saveCI" value="Save" class="submit">
+                </div>
+                <a href="#" onclick="expandMH()">
+                    <div class="heading">
+                        <h3>Medical History</h3>
+                        <i id="exmoMH" class="material-icons">expand_more</i>
+                        <i id="exleMH" class="material-icons">expand_less</i>
+                    </div>
+                </a>
+                <div id="MH">
+                        <label for="conditions">
+                            Medical Conditions:
+                            <textarea name="conditions" id="conditions" cols="30" rows="5" placeholder="Ex: Anemia, hypertension, chronic bronchitis ..."></textarea>
+                        </label>
+                        <label for="allergies">
+                            Allergies:
+                            <textarea name="allergies" id="allergies" cols="30" rows="5" placeholder="Ex: shellfish, peanuts, bee stings ..."></textarea>
+                        </label>
+                        
+                        <label for="rx">
+                            Prescriptions:
+                            <textarea name="rx" id="rx" cols="30" rows="5" placeholder="Ex: Metformin ..."></textarea>
+                        </label>
+                        <h3>Other Providers</h3>
+                        <table>
+                            <thead>
+                                <th>Name</th>
+                                <th>Specialty</th>
+                                <th>Phone</th>
+                                <th>Address</th>
+                                <th>Notes</th>
+                            </thead>
+                        </table>
+                        <a href="#" class="addfield" onclick="expandAH()">Add a provider <i class="material-icons">add</i></a>
+                        <div id="AH">
+                            <label for="drname">
+                                Name:
+                                <input type="text" name="drname" id="drname" placeholder="Ex: DR JAMES SMITH" oninput="upperCase()" class="uppercase">
+                            </label>
+                            <label for="drspecialty">
+                                Specialty:
+                                <input type="text" name="drspecialty" id="drspecialty" placeholder="Ex: CARDIOLOGIST" oninput="upperCase()" class="uppercase">
+                            </label>
+                            <label for="drphone">
+                                Phone:
+                                <input type="text" name="drphone" id="drphone" placeholder="Ex: 060 999 4545">
+                            </label>
+                            <label for="draddress">
+                                Address:
+                                <input type="text" name="draddress" id="draddress" placeholder="Ex: 24 MAIN ROAD, CARNARVON, NC" oninput="upperCase()" class="uppercase">
+                            </label>
+                            <label for="drnotes">
+                                Notes:
+                                <input type="text" name="drnotes" id="drnotes" placeholder="Ex: Annual visits for heart conditions">
+                            </label>
+                            <input type="button" name="saveAH" id="saveAH" value="Save Provider" class="submit">
+                        </div>
+                    <input type="button" name="saveMH" id="saveMH" value="Save" class="submit">
+                </div>
+            </div>
+            <input type="button" name="saveform" id="saveform" value="Save Patient" class="submit">
+        </form>
+    </div>
+</body>
+<script src="../js/addpatient.js"></script>

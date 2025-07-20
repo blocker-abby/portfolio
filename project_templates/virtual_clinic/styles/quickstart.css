@@ -1,0 +1,63 @@
+.content {
+    padding-bottom: 40px;
+    max-width: 700px;
+}
+
+.content ol {
+    max-width: 600px;
+    list-style-position: outside;
+    text-align: justify;
+}
+
+.content h2 {
+    padding: 20px;
+}
+
+.content h3 {
+    padding-top: 40px;
+    padding-bottom: 10px;
+    font-size: 1.5rem;
+}
+
+.content li {
+    font-weight: 600;
+    padding: 10px 0px;
+}
+
+.content p {
+    padding: 5px 0px 5px 20px;
+}
+
+.content img {
+    padding-bottom: 10px;
+}
+
+.heading {
+    display: flex;
+    background-color: var(--color_dark);
+    color: white;
+    padding: 10px;
+    padding-top: 0px;
+    width: 700px;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+#OP, #VM, #CM, #ST, #GM, #US, #OT {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
+
+#exleOP, #exleVM, #exleCM, #exleST, #exleGM, #exleUS, #exleOT {
+    display: none;
+}
+
+.material-icons {
+    vertical-align: middle;
+}
+
+.content a {
+    color: blue !important;
+    text-decoration: underline !important;
+}

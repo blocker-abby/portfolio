@@ -1,0 +1,93 @@
+.body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.body h2 {
+    font-size: 2rem;
+    padding: 20px;
+}
+
+.addpatient {
+    display: flex;
+    font-size: 1.2rem;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color_light);
+    border: solid var(--color_dark);
+    padding: 5px;
+    margin-top: 10px;
+}
+
+.addpatient i {
+    font-size: 1.5rem;
+    padding-left: 5px;
+}
+
+.addpatient:hover {
+    background-color: var(--color_bright);
+    color: white;
+}
+
+#searchbar {
+    width: 500px;
+    padding: 10px;
+}
+
+.body table {
+    text-align: center;
+    margin: 40px 0px;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+th {
+    background-color: var(--color_dark);
+    color: white;
+    padding: 10px 0px;
+}
+
+td {
+    background-color: var(--color_light);
+    padding: 10px;
+}
+
+td input {
+    background-color: transparent;
+    padding: 10px 0px;
+    width: 95%;
+    border: solid transparent;
+}
+
+td input:hover {
+    cursor: pointer;
+    background-color: var(--color_bright);
+    color: white;
+    border: solid var(--color_dark)
+}
+
+table i {
+    font-size: 0.2rem;
+}
+
+#start {
+    background-color: var(--color_dark);
+    color: white;
+    border: solid var(--color_dark);
+    margin: 10px;
+    padding: 0px 15px;
+}
+
+#start:hover {
+    background-color: var(--color_bright);
+    border: solid white;
+}
+
+#record:hover {
+    color: var(--color_bright);
+}

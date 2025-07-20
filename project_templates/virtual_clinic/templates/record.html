@@ -1,0 +1,324 @@
+<head>
+    <link rel="stylesheet" href="../styles/general.css">
+    <link rel="stylesheet" href="../styles/login.css">
+    <link rel="stylesheet" href="../styles/header.css">
+    <link rel="stylesheet" href="../styles/index.css">
+    <link rel="stylesheet" href="../styles/record.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="header">
+        <a class="header_links" href="index.html" id="home"><i  class="material-icons">home</i></a>
+        <div class="nav_bar">
+            <div class="dropdown">
+                <a class="header_links" href="#">Virtual Clinic<i class="material-icons">expand_more</i></a>
+                <div class="drop">
+                    <a class="drop_link" href="addpatient.html">Add Patient</a>
+                    <a class="drop_link" href="recordlist.html">Patient Records</a>
+                    <a class="drop_link" href="recordlist.html">Start Consultation</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <a class="header_links" href="resources.html">Resources<i class="material-icons">expand_more</i><br></a>
+                <div class="drop">
+                    <a class="drop_link" href="resources.html">Video Guides</a>
+                    <a class="drop_link" href="quickstart.html">FAQ</a>
+                    <a class="drop_link" href="ticket.html">Contact Us</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <a class="header_links" href="profile.html">Account<i class="material-icons">expand_more</i><br></a>
+                <div class="drop">
+                    <a class="drop_link" href="mailbox.html"><i class="material-icons">mail</i>Mailbox</a>
+                    <a class="drop_link" href="profile.html"><i class="material-icons">account_circle</i>Account Details</a>
+                    <a class="drop_link" href="login.html"><i class="material-icons">logout</i>Logout</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="body">
+        <div class="patientheader">
+            <h2>DOE, JOHN Record</h2>
+            <div class="headerinfo">
+                <div class="patientinfo">
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td>Name:</td>
+                                <td>DOE, JOHN</td>
+                            </tr>
+                            <tr>
+                                <td>Sex/Gender:</td>
+                                <td>MALE/MALE</td>
+                            </tr>
+                            <tr>
+                                <td>ID:</td>
+                                <td>1234567891101</td>
+                            </tr>
+                            <tr>
+                                <td>DOB:</td>
+                                <td>1982-03-02</td>
+                            </tr>
+                            <tr>
+                                <td>Age:</td>
+                                <td>43</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div id="allergies">
+                    <p>Allergies: NONE</p>
+                </div>
+                <div class="topbuttons">
+                    <a href="addpatient.html" id="editpatient" class="loadbutton">Edit Patient</a>
+                    <a href="consultplatform.html" id="startconsult" class="loadbutton">Start Consult</a>
+                    <a id="exportbutton" href="export.html" class="loadbutton">Print/Export Patient Data</a>
+                </div>
+            </div>
+        </div>
+        <div id="info">
+            <div class="drawerheading" id="chartsdrawer">
+                <h3>Charts</h3>
+                <button id="chartsopen"><span class="material-icons">expand_more</span></button>
+            </div>
+            <div id="charts" class="drawer">
+                <div class="insidedrawerheader">
+                    <h3>Charts</h3>
+                    <button id="chartsclose"><span class="material-icons">expand_less</span></button>
+                </div>
+                <form action="">
+                    <h5>Chart Display Options: </h5>
+                    <select name="displayno" id="displayno">
+                        <option value="3" selected disabled hidden>Select number of visits to be displayed</option>
+                        <option value="3">Past 3 visits</option>
+                        <option value="6">Past 6 visits</option>
+                        <option value="9">Past 9 visits</option>
+                    </select>
+                </form>
+                <div class="graphs">
+                    <canvas class="chart" id="chart1"></canvas>
+                    <canvas class="chart" id="chart2"></canvas>
+                    <canvas class="chart" id="chart3"></canvas>
+                    <canvas class="chart" id="chart4"></canvas>
+                    <canvas class="chart" id="chart5"></canvas>
+                </div>
+            </div>
+            <div class="drawerheading" id="consultsdrawer">
+                <h3>Consultations</h3>
+                <button id="consultsopen"><span class="material-icons">expand_more</span></button>
+            </div>
+            <div class="consultations drawer"  id="consults">
+                <div class="insidedrawerheader">
+                    <h3>Consultations</h3>
+                    <button id="consultsclose"><span class="material-icons">expand_less</span></button>
+                </div>
+                <div class="consultation">
+                    <h4>Consultation 009</h4>
+                    <table class="smalltable">
+                        <thead>
+                            <th>Date</th>
+                            <th>Time Started</th>
+                            <th>Time Ended</th>
+                        </thead>
+                        <tr>
+                            <td>2025-07-18</td>
+                            <td>09:27</td>
+                            <td>09:49</td>
+                        </tr>
+                    </table>
+                    <table>
+                        <thead>
+                            <th>Site Location</th>
+                            <th>Presiding Onsite Staff</th>
+                            <th>Presiding Remote Staff</th>
+                        </thead>
+                        <tr>
+                            <td>Carnarvon Clinic</td>
+                            <td>Sr Patricia Thomas</td>
+                            <td>Dr Mary Roland</td>
+                        </tr>
+                    </table>
+                    <h5>Medical Data</h5>
+                    <table class="smalltable">
+                        <thead>
+                            <th>Height (cm)</th>
+                            <th>Weight (kg)</th>
+                            <th>BMI</th>
+                            <th>Temp (C)</th>
+                            <th>SpO2 (%)</th>
+                        </thead>
+                        <tr>
+                            <td>170</td>
+                            <td>65</td>
+                            <td>23</td>
+                            <td>37</td>
+                            <td>97</td>
+                        </tr>
+                        <thead>
+                            <th>Heart Rate (bpm)</th>
+                            <th>Resp. Rate (breaths/min)</th>
+                            <th>Blood Pressure (SYS/DIA)</th>
+                            <th>Glucose (mmol/L)</th>
+                            <th>Hemoglobin (g/dl)</th>
+                        </thead>
+                        <tr>
+                            <td>74</td>
+                            <td>14</td>
+                            <td>120/80</td>
+                            <td></td>
+                            <td>15</td>
+                        </tr>
+                    </table>
+                    <div>
+                        <h6>General Exam Notes:</h6>
+                        <p>Acute rash on chest, arms, legs. No bleeding, bruising, loss of weight, or headaches. No recorded allergies.</p>
+                        <h6>Final Assessment:</h6>
+                        <p>Viral illness 1 week ago. Rash distributed on chest, upper right arm, left forearm, and both shins. Multiple discrete lesions. Macular, round lesions ranging from 1-3mm in diameter. Final diagnosis: immune thrombocytopenia. Patient sent home to monitor condition over the next week and return to clinic if rash worsens</p>
+                        <h6>Prescriptions:</h6>
+                        <p>N/A</p>
+                    </div>
+                    <div>
+                        <h6>Images/Video</h6>
+                        <p>Images and video from consult would be shown/linked here.</p>
+                    </div>
+                </div>
+                <div class="consultation">
+                    <h4>Consultation 008</h4>
+                    <table class="smalltable">
+                        <thead>
+                            <th>Date</th>
+                            <th>Time Started</th>
+                            <th>Time Ended</th>
+                        </thead>
+                        <tr>
+                            <td>2025-01-15</td>
+                            <td>14:08</td>
+                            <td>14:40</td>
+                        </tr>
+                    </table>
+                    <table>
+                        <thead>
+                            <th>Site Location</th>
+                            <th>Presiding Onsite Staff</th>
+                            <th>Presiding Remote Staff</th>
+                        </thead>
+                        <tr>
+                            <td>Carnarvon Clinic</td>
+                            <td>Sr Patricia Thomas</td>
+                            <td>Dr Mary Roland</td>
+                        </tr>
+                    </table>
+                    <h5>Medical Data</h5>
+                    <table class="smalltable">
+                        <thead>
+                            <th>Height (cm)</th>
+                            <th>Weight (kg)</th>
+                            <th>BMI</th>
+                            <th>Temp (C)</th>
+                            <th>SpO2 (%)</th>
+                        </thead>
+                        <tr>
+                            <td>170</td>
+                            <td>64</td>
+                            <td>23</td>
+                            <td>37</td>
+                            <td>99</td>
+                        </tr>
+                        <thead>
+                            <th>Heart Rate (bpm)</th>
+                            <th>Resp. Rate (breaths/min)</th>
+                            <th>Blood Pressure (SYS/DIA)</th>
+                            <th>Glucose (mmol/L)</th>
+                            <th>Hemoglobin (g/dl)</th>
+                        </thead>
+                        <tr>
+                            <td>72</td>
+                            <td></td>
+                            <td>115/75</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </table>
+                    <div>
+                        <h6>General Exam Notes:</h6>
+                        <p>Wellness checkup/yearly physical</p>
+                        <h6>Final Assessment:</h6>
+                        <p>No concerns.</p>
+                        <h6>Prescriptions:</h6>
+                        <p>N/A</p>
+                    </div>
+                    <div>
+                        <h6>Images/Video</h6>
+                        <p>Images and video from consult would be shown/linked here.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="drawerheading" id="ptinfodrawer">
+                <h3>Patient Information</h3>
+                <button id="ptinfoopen"><span class="material-icons">expand_more</span></button>
+            </div>
+            <div id="ptinfo" class="drawer">
+                <div class="insidedrawerheader">
+                    <h3>Patient Information</h3>
+                    <button id="ptinfoclose"><span class="material-icons">expand_less</span></button>
+                </div>
+                <h4>Medical History Overview</h4>
+                <h5>Medical Conditions</h5>
+                <p>NONE</p>
+                <h5>Allergies</h5>
+                <p>NONE</p>
+                <h5>Medicines</h5>
+                <p>NONE</p>
+                <h4>Contact Information</h4>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>Email:</td>
+                            <td>JDOE@EMAIL.COM</td>
+                        </tr>
+                        <tr>
+                            <td>Phone:</td>
+                            <td>123 456 7890</td>
+                        </tr>
+                        <tr>
+                            <td>Address:</td>
+                            <td>12 MAIN ROAD</td>
+                        </tr>
+                        <tr>
+                            <td>City:</td>
+                            <td>CARNARVON</td>
+                        </tr>
+                        <tr>
+                            <td>Province:</td>
+                            <td>NC</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <h4>Emergency Contacts</h4>
+                    <table class="smalltable">
+                        <thead>
+                            <th>Name</th>
+                            <th>Surname</th>
+                            <th>Relationship</th>
+                            <th>Phone</th>
+                        </thead>
+                        <tr>
+                            <td>JANE</td>
+                            <td>DOE</td>
+                            <td>SPOUSE</td>
+                            <td>987 645 3210</td>
+                        </tr>
+                    </table>
+                <h4>Demographic Information</h4>
+                <h5>Employment Status</h5>
+                <p>EMPLOYED</p>
+                <h5>Employer</h5>
+                <p>GROCERY STORE</p>
+                <h5>Marital Status</h5>
+                <p>MARRIED</p>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="../js/record.js"></script>

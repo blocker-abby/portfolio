@@ -1,0 +1,43 @@
+.message {
+    border: solid var(--color_dark);
+    width: 600px;
+    margin: 12px 0px;
+    padding: 15px 12px;
+    background-color: var(--color_light);
+    color: var(--color_dark)
+}
+
+.nonloader {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+
+.message-body a {
+    color: white;
+    background-color: var(--color_dark);
+    border: solid var(--color_dark);
+    text-align: center;
+    padding: 8px 8px;
+    width: 250px;
+    font: 0.8rem;
+}
+
+.message-body a:hover {
+    background-color: var(--color_bright);
+    border: solid var(--color_dark);
+    cursor: pointer;
+}
+
+.detailchange {
+    font-style: italic;
+}
+
+.detaillink {
+    color: blue; text-decoration: underline;
+}
+
+p {
+    margin: 10px;
+}

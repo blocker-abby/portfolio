@@ -1,0 +1,165 @@
+#record {
+    color: white;
+    background-color: var(--color_med);
+    border: solid var(--color_med);
+    text-align: center;
+    font-size: 1.3rem;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+}
+
+#record:hover {
+    background-color: var(--color_bright);
+    border: solid var(--color_dark);
+    cursor: pointer;
+}
+
+.body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.heading {
+    display: flex;
+    background-color: var(--color_dark);
+    color: white;
+    padding: 10px;
+    padding-top: 0px;
+    width: 700px;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.body h2 {
+    font-size: 2rem;
+    padding: 20px;
+    text-align: center;
+}
+
+#PI, #CI, #MH {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
+
+#exlePI, #exleCI, #exleMH {
+    display: none;
+}
+
+.body label {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+
+.body h3 {
+    text-align: center;
+    padding-top: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form input, select {
+    padding: 5px;
+    width: 300px;
+}
+
+form textarea {
+    width: 600px;
+    height: 50px;
+}
+
+#inputs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.form {
+    display: flex;
+}
+
+.addfield {
+    display: flex;
+    font-size: 1.2rem;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    background-color: var(--color_med);
+    border: solid var(--color_dark);
+    padding: 5px;
+    margin: 15px;
+    color: white;
+}
+
+.addfield:hover {
+    background-color: var(--color_bright);
+    color: white;
+}
+
+#AH, #AC {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
+
+.body td {
+    width: 130px;
+    word-wrap: break-word;
+    padding: 5px;
+}
+
+#saveAC, #saveAH {
+    width: 200px;
+}
+
+#saveform {
+    width: 200px;
+}
+
+.submit {
+    display: flex;
+    font-size: 1.2rem;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    background-color: var(--color_light);
+    border: solid var(--color_dark);
+    padding: 5px;
+    margin-top: 10px;
+}
+
+.submit:hover {
+    background-color: var(--color_bright);
+    color: white;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+#profilepic {
+    height: 60px;
+}
+
+#profilephotodiv {
+    display: flex;
+}
+
+#uploaddiv {
+    margin-left: 50px;
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

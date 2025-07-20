@@ -1,0 +1,382 @@
+.header {
+    background-color: var(--color_med);
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#patientbio {
+    display: flex;
+}
+
+#middlepanel, #videos, #bottompanel form, #measurements, #notes, .measurements {
+    display: flex;
+}
+
+#videos {
+    height: 57vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.inputs, .labels {
+    display: flex;
+    flex-direction: column;
+}
+
+.inputs input, .labels label {
+    padding: 2px;
+    margin: 2px;
+}
+
+.inputs input {
+    width: 60px;
+}
+
+#bpsys, #bpdia {
+    width: 40px;
+}
+
+#bloodpress {
+    display: flex;
+}
+
+textarea {
+    font-size: 0.8rem;
+    padding: 5px;
+}
+
+#bottompanel form {
+    display: flex;
+    flex-direction: column;
+}
+
+#measurepanel {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 5px;
+}
+
+#controlpanel {
+    display: flex;
+    justify-content: space-around;
+}
+
+#peerVideo, #localVideo {
+    height: 95%;
+    padding-left: 10px;
+    width: 95%;
+}
+
+button {
+    border: solid var(--color_dark);
+    background-color: var(--color_dark);
+    color: white;
+    padding: 5px 5px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+}
+
+button:hover:enabled {
+    color: var(--color_bright);
+    border: solid var(--color_bright);
+    cursor: pointer;
+}
+
+#end_button {
+    background-color: var(--color_bright);
+    border: solid var(--color_bright);
+    font-size: 1rem;
+    color: white;
+    padding: 7px 2px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+}
+
+#end_button:hover {
+    border: solid var(--color_dark);
+    color: var(--color_dark);
+    cursor: pointer;
+}
+
+button:disabled {
+    opacity: 0.6;
+    background-color: lightgray;
+    border: solid lightgray;
+    color: black;
+    cursor: not-allowed;
+}
+
+#screenshotPeer {
+    display: none;
+}
+
+#rec_text {
+    display: none;
+}
+
+#screenshotLocal, #screenshotPeer {
+    position: absolute;
+    margin: 10px;
+    opacity: 75%;
+    z-index: 1;
+}
+
+#peer_request {
+    color: white;
+    background-color: var(--color_dark);
+    border: solid var(--color_dark);
+    text-align: center;
+    padding: 5px 3px;
+    width: 250px;
+    font: 1rem;
+    margin: 5px;
+    width: 150px;
+}
+
+#peer_request:hover {
+    background-color: var(--color_bright);
+    border: solid var(--color_dark);
+    cursor: pointer;
+}
+
+.header  {
+    font-size: 0.8rem;
+}
+
+.header h1 {
+    font-size: 1rem;
+}
+
+#idphoto img {
+    height: 75px;
+}
+
+.header button, #end_button {
+    font-size:  0.8rem;
+    padding: 5px;
+    margin: 5px;
+}
+
+#toolbar {
+    background-color: var(--color_dark);
+    padding: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#toolbar form {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#toolbar button {
+    background-color: var(--color_med);
+    border: solid var(--color_med);
+    margin: 3px;
+}
+
+#toolbar button:hover {
+    border: solid var(--color_bright)
+}
+
+#measurements, #translate, #helpdesk {
+    display: flex;
+    flex-direction: column;
+    font-size: 0.8rem;
+    width: 26vw;
+    border: solid var(--color_dark);
+    background-color: var(--color_dark);
+    color: white;
+}
+
+#measurements input {
+    padding: 0px;
+}
+
+#measurements label {
+    padding: 2px 0px;
+}
+
+#staticmeasures {
+    display: flex;
+    flex-direction: row;
+    margin: 5px;
+}
+
+#textmeasures textarea {
+    height: 12vh;
+}
+
+#textmeasures div {
+    margin: 10px;
+}
+
+#notesClose {
+    padding: 1px;
+    width: 15px;
+    text-align: center;
+    margin-left: 5px;
+}
+
+#notesClose i {
+    font-size: 1rem;
+}
+
+#measurements h2 {
+    text-align: center;
+}
+
+#notespanel {
+    display: flex;
+    justify-content: space-between;
+}
+
+#video_toolbar_panel {
+    width: 74vw;
+}
+
+#hollowtoolbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+}
+
+#hollowtoolbar p {
+    display: none;
+    vertical-align: top;
+}
+
+#hollowtoolbar div {
+    background-color: var(--color_med);
+    color: white
+}
+
+#videos {
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+}
+
+#userview {
+    display: flex;
+    flex-direction: column;
+}
+
+#ecgchart {
+    height: 30vh;
+    width: 99%;
+}
+
+#ecg_panel {
+    display: none;
+}
+
+#video_toolbar_panel button[disabled]:hover {
+    border: solid gray;
+}
+
+#ecg_panel button {
+    font-size: 0.8rem;
+    height: 15px;
+    padding: 1px;
+}
+
+#ecg_panel i {
+    font-size: 0.8rem;
+}
+
+#submitNotes, .nonloader, #translate, #recordingSubmit, #peerVideo, #helpdesk {
+    display: none;
+}
+
+#samplevid {
+    width: 450px;
+}
+
+#samplenursevid {
+    width: 460px;
+    padding-right: 20px;
+}
+
+.nonloader {
+    display: block;
+}
+
+#helpdesk h1 {
+    display: none;
+}
+
+#links, #links div {
+    display: flex;
+    flex-direction: column;
+    color: var(--color_bright);
+    text-decoration: underline;
+    padding-bottom: 5px;
+}
+
+#helpdesk {
+    max-height: 80vh;
+    overflow-y: scroll;
+    width: 20vw;
+}
+
+#helpdesk .content div {
+    margin-top: 10px;
+}
+
+#helpdesk h2, #helpdesk h3 {
+    font-size: 1rem;
+}
+
+#helpdesk img {
+    max-width: 90%;
+    max-height: 200px;
+}
+
+iframe {
+    width: 90%;
+ }
+
+ #helpdesk p, #helpdesk img, #helpdesk #overview, #ecgchart {
+    display: none;
+ }
+
+ ol, ul {
+    list-style-position: inside
+ }
+
+ #autosave {
+    display: flex;
+}
+
+#settings-block {
+    display: none;
+    border: solid white;
+    font-size: 1rem;
+}
+
+#settings-block option {
+    font-size: 0.7rem;
+}
+
+#en_asr, #xh_asr, #tl {
+    width: 200px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+#cost-warning {
+    color: var(--color_bright);
+}
+
+#translateForm {
+    display: flex;
+    flex-direction: column;
+}

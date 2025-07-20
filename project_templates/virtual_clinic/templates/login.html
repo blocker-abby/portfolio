@@ -1,0 +1,35 @@
+<head>
+    <link rel="stylesheet" href="../styles/general.css">
+    <link rel="stylesheet" href="../styles/login.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <div class="header">
+        <h1>Login</h1>
+    </div>
+    <div class="body">
+        <form action="">
+            <h1>Sign In</h1>
+            <h2>Email:</h2>
+            <input type="text" name="username" id="username" value="doctor">
+            <h2>Password:</h2>
+            <input type="password" name="password" id="password" value="doctor">
+            <br>
+            <label for="box" id="see">
+                Check to See Password
+            </label>
+            <br>
+            <input type="checkbox" id="box" onclick ="reveal()">
+            <br>
+            <a href="index.html"><input type="button" name="submit" id="submit" value="Submit"></a>
+        </form>
+        <div id="register">
+            <h2>Don't have an account?</h2>
+            <a id="register-button" href="#">Register</a>
+            <h2>Forgot Password?</h2>
+            <a href="" id="resetpass">Click here to contact the admin team to reset your password</a>
+        </div>
+    </div>
+    <a id="backbutton" href="../index.html"><i class="material-icons">arrow_left</i>Return Back to Project Website</a>
+</body>
+<script src="../js/login.js"></script>

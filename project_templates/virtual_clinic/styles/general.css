@@ -1,0 +1,66 @@
+@import "fonts.css";
+
+:root {
+    --color_light: #edf2f4;
+    --color_med: #8d99ae;
+    --color_dark: #2b2d42;
+    --color_neutral: #3f6c51;
+    --color_bright: #af5d63;
+}
+
+html, button, select, textarea {
+    font-size: 15px;
+    font-family: 'NotoSans', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+a:link, a:visited, a:hover, a:active {
+    text-decoration: none;
+    color: inherit;
+}
+
+.body {
+    min-height: 85vh;
+}
+
+.body {
+    display: none;
+}
+
+.loader {
+    width: 99vw;
+    height: 75vh;
+    color: var(--color_light);
+    display: none;
+}
+
+.loadbar {
+    width: 120px;
+    height: 20px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: 
+      linear-gradient(90deg, #0000 , var(--color_bright)) left -50px top 0/50px 20px no-repeat 
+      var(--color_med);
+    animation: l2 1s infinite linear;
+  }
+  @keyframes l2 {
+    100% {background-position: right -50px top 0}
+  }
+
+  #backbutton {
+    text-align: center;
+    text-decoration: underline;
+    color: blue;
+    padding-left: 20px;
+  }

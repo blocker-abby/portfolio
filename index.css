@@ -1,9 +1,10 @@
 :root {
     --color1: black;
-    --color2: #F05365;
-    --color3: #BD93BD;
+    --color2: #8dcfec;
+    --color3: #ffd1df;
     --color4: #F2EDEB;
     --color5: #fce63a;
+    --color6: #5e00fd;
 }
 
 body {
@@ -66,7 +67,7 @@ img {
 
 .project-card {
     width: calc(80%/3);
-    background-color: var(--color4);
+    background-color: var(--color6);
     margin: 15px;
     height: 200px;
     display: flex;
@@ -83,8 +84,8 @@ img {
 .project-card:hover {
     cursor: pointer;
     background-color: var(--color3);
-    color: var(--color4);
-    border: solid var(--color4);
+    color: var(--color6);
+    border: solid var(--color6);
 }
 
 @media (max-width: 1000px) {

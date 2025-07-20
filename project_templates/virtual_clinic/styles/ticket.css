@@ -1,0 +1,52 @@
+.body h2 {
+    margin: 10px;
+}
+
+.body p {
+    width: 400px;
+    text-align: justify;
+    padding: 5px;
+}
+
+.body label {
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+    align-items: center;
+}
+
+.body input[type=text] {
+    width: 400px;
+    padding: 10px 20px;
+}
+
+.body select {
+    width: 450px;
+    padding: 10px 20px;
+}
+
+.body textarea {
+    padding: 5px;
+    width: 500px;
+}
+
+#submit {
+    font-size: 1.5rem;
+    margin: 10px;
+    padding: 10px;
+    background-color: var(--color_dark);
+    color: white;
+    border-radius: 10px;
+}
+
+#submit:hover {
+    background-color: var(--color_bright);
+    cursor: pointer;
+}
+
+.alert {
+    color: white;
+    padding: 10px;
+    background-color: var(--color_neutral);
+    border-radius: 10px;
+}

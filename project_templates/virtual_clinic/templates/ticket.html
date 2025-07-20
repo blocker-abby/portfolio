@@ -1,0 +1,73 @@
+<head>
+    <link rel="stylesheet" href="../styles/general.css">
+    <link rel="stylesheet" href="../styles/login.css">
+    <link rel="stylesheet" href="../styles/header.css">
+    <link rel="stylesheet" href="../styles/ticket.css">
+    <link rel="stylesheet" href="../styles/landing.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <div class="header">
+        <a class="header_links" href="index.html" id="home"><i  class="material-icons">home</i></a>
+        <div class="nav_bar">
+            <div class="dropdown">
+                <a class="header_links" href="#">Virtual Clinic<i class="material-icons">expand_more</i></a>
+                <div class="drop">
+                    <a class="drop_link" href="addpatient.html">Add Patient</a>
+                    <a class="drop_link" href="recordlist.html">Patient Records</a>
+                    <a class="drop_link" href="recordlist.html">Start Consultation</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <a class="header_links" href="resources.html">Resources<i class="material-icons">expand_more</i><br></a>
+                <div class="drop">
+                    <a class="drop_link" href="resources.html">Video Guides</a>
+                    <a class="drop_link" href="quickstart.html">FAQ</a>
+                    <a class="drop_link" href="ticket.html">Contact Us</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <a class="header_links" href="profile.html">Account<i class="material-icons">expand_more</i><br></a>
+                <div class="drop">
+                    <a class="drop_link" href="mailbox.html"><i class="material-icons">mail</i>Mailbox</a>
+                    <a class="drop_link" href="profile.html"><i class="material-icons">account_circle</i>Account Details</a>
+                    <a class="drop_link" href="login.html"><i class="material-icons">logout</i>Logout</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="loader"><div class="loadbar"></div></div>
+    <div class="body">
+        <div class="content">
+            <h2>Ticket Sumbission</h2>
+            <p>Please fill out this form if you are having issues with the virtual clinic system. Our team will work to get back to you within the designated priority time.</p>
+            <p>Note that any emergency issues related to patient care should NOT be submitted under this form. Please call emergency services if the patient is experiencing an emergency health event.</p>
+            <form id="ticket-form">
+                <label for="issue">
+                    Issue:
+                    <select name="issue" id="issue" required>
+                        <option value="" selected disabled hidden>Select option</option>
+                        <option value="hardware">Hardware (medical devices, laptop)</option>
+                        <option value="software">Software (virtual clinic platform)</option>
+                        <option value="other">Other</option>
+                    </select>
+                </label>
+                <label for="priority">
+                    Priority Level:
+                    <select name="priority" id="priority" required>
+                        <option value="" selected disabled hidden>Select option</option>
+                        <option value="low">Low (System can be used but an issue has been raised which could affect future use)</option>
+                        <option value="medium">Medium (System can be used but one or some capabilities are not available)</option>
+                        <option value="high">High (System cannot be used)</option>
+                    </select>
+                </label>
+                <label for="description">
+                    Description:
+                    <textarea name="description" id="description" cols="30" rows="10" placeholder="Please provide a brief description of the system issue." required></textarea>
+                </label>
+                <input type="button" name="submit" id="submit" value="Submit">
+            </form>
+        </div>
+    </div>
+</body>
+<script src="../js/ticket.js"></script>

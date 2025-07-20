@@ -1,0 +1,202 @@
+#editpatient, #startconsult, #exportbutton {
+    color: white;
+    background-color: var(--color_dark);
+    border: solid var(--color_dark);
+    text-align: center;
+    font-size: 1.3rem;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+}
+
+#editpatient, #exportbutton {
+    margin-top: 10px;
+    height: 25px;
+}
+
+#editpatient:hover, #startconsult:hover, #exportbutton:hover {
+    background-color: var(--color_bright);
+    border: solid var(--color_dark);
+    cursor: pointer;
+}
+
+.body h3 {
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.body h4 {
+    font-size: 1.3rem;
+    font-style: italic;
+    padding: 10px 0px;
+}
+
+.body h5 {
+    font-size: 1.15rem;
+    padding: 7px 0px;
+    font-weight: 400;
+    color: gray;
+    text-decoration: underline;
+}
+
+.body h6 {
+    font-size: 1rem;
+    font-weight: 400;
+    background-color: var(--color_light);
+    padding: 7px 0px;
+}
+
+.body table {
+    margin: 0px;
+}
+
+.body th {
+    background-color: var(--color_med);
+    padding: 5px;
+    color: white;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.body td {
+    padding: 5px;
+}
+
+.patient-info {
+    border: solid var(--color_bright);
+    min-width: 650px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.consultations {
+    border: solid var(--color_dark);
+    width: 40vw;
+    padding: 20px;
+    margin-top: 10px;
+}
+
+.consultation {
+    border: solid var(--color_med);
+    padding: 20px;
+    margin-top: 10px;
+}
+
+.consultation p {
+    padding-left: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+canvas {
+    width: 250px;
+    margin-top: 30px;
+}
+
+#displayno {
+    padding: 5px;
+    margin: 10px;
+}
+
+form {
+    margin: 10px;
+}
+
+.patientheader {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.headerinfo {
+    display: flex;
+}
+
+.patientinfo {
+    display: flex;
+    padding: 0px 40px;
+}
+
+#info {
+    display: flex;
+}
+
+#ptinfo, #charts {
+    width: 25vw;
+}
+
+.smalltable, .smalltable th {
+    font-size: 0.75rem;
+}
+
+#ptinfo {
+    padding-left: 20px;
+}
+
+#charts {
+    padding-right: 20px;
+}
+
+.consult-img {
+    max-width: 90%;
+    padding: 10px 0px;
+    max-height: 50%;
+}
+
+
+.video-link, .video-link:visited {
+    color: blue;
+    text-decoration: underline;
+}
+
+.topbuttons {
+    display: flex;
+    flex-direction: column;
+    margin: 0px 50px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#idphoto img {
+    height: 150px;
+}
+
+#exportbutton, #startconsult, #editpatient {
+    font-size: 1rem;
+    padding: 5px 10px;
+    margin: 1px;
+}
+
+.drawerheading {
+    display: flex;
+    margin-top: 25px;
+}
+
+.drawerheading button {
+    max-height: 25px;
+}
+
+#ptinfodrawer, #chartsdrawer, #consultsdrawer {
+    display: none;
+}
+
+#info {
+    justify-content: space-around;
+    width: 100%;
+}
+
+.insidedrawerheader {
+    display: flex;
+    justify-content: center;
+}
+
+.body .material-icons {
+    font-size: 1rem;
+}
+
+.body {
+    display: flex;
+    flex-direction: column;
+}

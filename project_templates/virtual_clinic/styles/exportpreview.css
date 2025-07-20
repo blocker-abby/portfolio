@@ -1,0 +1,75 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 2550px;
+}
+
+#basicpt {
+    display: flex;
+    flex-direction: column;
+}
+
+#basicpt2 {
+    display: flex;
+}
+
+#basicpt2 h4 {
+    margin: 0px 8px;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+#ptinfo h5 {
+    font-weight: 500;
+    font-size: 12pt;
+}
+
+.nextto {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.nextto div {
+    padding: 15px;
+    width: 50%;
+    border: 1px solid black;
+}
+
+@media print {
+    .pagebreak {
+        page-break-after: always;
+    }
+}
+
+.consultation h4, .consultation h5, .consultation h6{
+    font-size: 20px;
+}
+
+.consultation {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid black;
+    margin: 10px 0px;
+}
+
+.consultation table {
+    text-align: center;
+}
+
+#consultmeddiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#consultmeddiv img {
+    max-width: 80%;
+    padding-bottom: 10px;
+}

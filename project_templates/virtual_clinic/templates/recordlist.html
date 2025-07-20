@@ -1,0 +1,68 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="../styles/general.css">
+        <link rel="stylesheet" href="../styles/login.css">
+        <link rel="stylesheet" href="../styles/header.css">
+        <link rel="stylesheet" href="../styles/index.css">
+        <link rel="stylesheet" href="../styles/recordlist.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    </head>
+    <body>
+        <div class="header">
+            <a class="header_links" href="index.html" id="home"><i  class="material-icons">home</i></a>
+            <div class="nav_bar">
+                <div class="dropdown">
+                    <a class="header_links" href="#">Virtual Clinic<i class="material-icons">expand_more</i></a>
+                    <div class="drop">
+                        <a class="drop_link" href="addpatient.html">Add Patient</a>
+                        <a class="drop_link" href="recordlist.html">Patient Records</a>
+                        <a class="drop_link" href="recordlist.html">Start Consultation</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a class="header_links" href="resources.html">Resources<i class="material-icons">expand_more</i><br></a>
+                    <div class="drop">
+                        <a class="drop_link" href="resources.html">Video Guides</a>
+                        <a class="drop_link" href="quickstart.html">FAQ</a>
+                        <a class="drop_link" href="ticket.html">Contact Us</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a class="header_links" href="profile.html">Account<i class="material-icons">expand_more</i><br></a>
+                    <div class="drop">
+                        <a class="drop_link" href="mailbox.html"><i class="material-icons">mail</i>Mailbox</a>
+                        <a class="drop_link" href="profile.html"><i class="material-icons">account_circle</i>Account Details</a>
+                        <a class="drop_link" href="login.html"><i class="material-icons">logout</i>Logout</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="loader"><div class="loadbar"></div></div>
+        <div class="body">
+            <h2>Patient Database</h2>
+            <a class="addpatient" href="addpatient.html">Add patient <i class="material-icons">add</i></a>
+            <table>
+                <thead>
+                    <th>PID</th>
+                    <th>Surname</th>
+                    <th>Name</th>
+                    <th>SA ID</th>
+                    <th>DOB</th>
+                    <th>Patient Record</th>
+                    <th>Start Consult</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>123456</td>
+                        <td>DOE</td>
+                        <td>JOHN</td>
+                        <td>1234567891011</td>
+                        <td>1982-03-02</td>
+                        <td><a id="record" href="record.html" class="record-button"><i class="material-icons">book</i></a></td>
+                        <td><a id="start" href="consultplatform.html">Start Consult</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </body>
+</html>

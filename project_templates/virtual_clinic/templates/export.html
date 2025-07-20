@@ -1,0 +1,103 @@
+<head>
+    <link rel="stylesheet" href="../styles/general.css">
+    <link rel="stylesheet" href="../styles/login.css">
+    <link rel="stylesheet" href="../styles/header.css">
+    <link rel="stylesheet" href="../styles/index.css">
+    <link rel="stylesheet" href="../styles/export.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <div class="header">
+        <a class="header_links" href="index.html" id="home"><i  class="material-icons">home</i></a>
+        <div class="nav_bar">
+            <div class="dropdown">
+                <a class="header_links" href="#">Virtual Clinic<i class="material-icons">expand_more</i></a>
+                <div class="drop">
+                    <a class="drop_link" href="addpatient.html">Add Patient</a>
+                    <a class="drop_link" href="recordlist.html">Patient Records</a>
+                    <a class="drop_link" href="recordlist.html">Start Consultation</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <a class="header_links" href="resources.html">Resources<i class="material-icons">expand_more</i><br></a>
+                <div class="drop">
+                    <a class="drop_link" href="resources.html">Video Guides</a>
+                    <a class="drop_link" href="quickstart.html">FAQ</a>
+                    <a class="drop_link" href="ticket.html">Contact Us</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <a class="header_links" href="profile.html">Account<i class="material-icons">expand_more</i><br></a>
+                <div class="drop">
+                    <a class="drop_link" href="mailbox.html"><i class="material-icons">mail</i>Mailbox</a>
+                    <a class="drop_link" href="profile.html"><i class="material-icons">account_circle</i>Account Details</a>
+                    <a class="drop_link" href="login.html"><i class="material-icons">logout</i>Logout</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="body">
+        <h2>Print/Export Patient Data</h2>
+        <div class="patientinfo">
+            <table>
+                <tbody>
+                    <tr>
+                        <td>Name:</td>
+                        <td>DOE, JOHN</td>
+                    </tr>
+                    <tr>
+                        <td>Sex/Gender:</td>
+                        <td>MALE/MALE</td>
+                    </tr>
+                    <tr>
+                        <td>ID:</td>
+                        <td>1234567891101</td>
+                    </tr>
+                    <tr>
+                        <td>DOB:</td>
+                        <td>1982-03-15</td>
+                    </tr>
+                    <tr>
+                        <td>Age:</td>
+                        <td>43</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div>
+            <h3>Options:</h3>
+            <p>Select the patient information you would like to print or export.</p>
+            <form id="optionform">
+                <label for="all"><input type="checkbox" id="all" name="all">Select all</label>             
+                <label for="ptinfo"><input type="checkbox" name="ptinfo" id="ptinfo">Patient Information and Demographics</label>               
+                <label for="charts" hidden><input type="checkbox" name="charts" id="charts">Charts</label>              
+                <label for="consults"><input type="checkbox" name="consults" id="consults">Consultations</label>
+                <div id="consultchoices">
+                    <label for="consults2"><input type="radio" name="consults2" id="consultsall">All Consultations</label>                   
+                    <label for="consults2"><input type="radio" name="consults2" id="consultsselect">Specify Date Range of Consultations:</label>    
+                    <div id="consultdates">                       
+                        <label for="consultdatefrom">From:<input type="date" name="consultdatefrom" id="consultdatefrom"></label>                      
+                        <label for="consultdateto">To:<input type="date" name="consultdateto" id="consultdateto"></label>
+                    </div>
+                    <label for="consultimages">Include Images?                    
+                        <select name="consultimages" id="consultimages">
+                            <option value="select" selected disabled hidden>Select option</option>
+                            <option value="yes">Yes</option>
+                            <option value="no">No</option>
+                        </select>
+                    </label>
+                </div>
+                <label for="printexp">Print or Export?                   
+                    <select name="printexp" id="printexp">
+                        <option value="select" selected disabled hidden>Select option</option>
+                        <option value="print">Print (includes print to PDF)</option>
+                        <option value="export">Export to JSON File</option>
+                    </select>
+                </label>
+                <input type="button" id="submit" value="Submit" disabled>
+                <a href="exportpreview.html" id="linknext"></a>
+            </form>
+        </div>
+    </div>
+</body>
+<script src="../js/export.js"></script>
